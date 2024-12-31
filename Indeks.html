@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Surat dan Pesan</title>
+  <style>
+    body {
+      background-color: #031527;
+      color: #f8f9fa;
+      text-align: center;
+      padding: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .greeting {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #00aaff;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .description {
+      font-size: 1 rem;
+      line-height: 1;
+      color: #ced4da;
+      margin: 30px 0;
+      animation: slideIn 2s ease-in-out;
+      white-space: pre-line;
+    }
+    .button-container {
+      margin-top: 30px;
+    }
+    .btn-custom {
+      background-color: #28a745;
+      color: white;
+      font-size: 1.3rem;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .btn-custom:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="greeting">
+    L<span style="color: #00aaff;">I</span>Y<span style="color: #00aaff;">A</span>
+  </div>
+  <div class="description">
+    Sayang,
+
+    Aku ingin meluangkan waktu sejenak untuk menyampaikan isi hati yang selama ini selalu aku simpan. Nggak terasa kita sudah sampai di akhir tahun, dan selama itu, kamu telah menjadi sosok yang luar biasa penting dalam hidupku. Aku merasa sangat bersyukur karena memiliki kamu di sampingku.
+
+    Setiap tawa, setiap momen kecil yang kita lewati bersama, semuanya adalah hal yang sangat berarti. Kamu bukan hanya menjadi teman terbaikku, tetapi juga sumber kekuatan di saat-saat sulit. Aku ingin kamu tahu bahwa aku sangat mengagumi caramu menghadapi dunia dengan senyuman dan keberanian.
+
+    Di tahun yang baru nanti, aku berharap kita bisa terus saling mendukung, saling memahami, dan menciptakan lebih banyak cerita indah bersama. Kamu adalah seseorang yang selalu aku inginkan ada di hidupku, bukan hanya hari ini, tetapi juga di masa depan. Terima kasih sudah menjadi bagian terpenting dalam hariku.
+
+    Selamat Tahun Baru, sayang. Semoga setiap harapan dan impian kita menjadi nyata. Aku mencintaimu, lebih dari kata-kata yang bisa aku ungkapkan. ❤️
+
+    Seperti pesan yang dibawah ini
+  </div>
+  <div class="button-container">
+    <button class="btn btn-custom" id="showVideoButton">
+      Klik Di Sini untuk Lihat Pesan 🎥
+    </button>
+  </div>
+
+  <script>
+    document.getElementById('showVideoButton').addEventListener('click', function() {
+      window.location.href = "/assets/Snaptik.app_7454080098132561158.mp4"; // Arahkan ke halaman video
+    });
+  </script>
+</body>
+</html>
